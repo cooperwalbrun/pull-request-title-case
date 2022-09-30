@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+/build
+/.svelte-kit
+/package
+/coverage
+/dist
+
+# IntelliJ files
+.idea
+*.iml
