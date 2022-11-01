@@ -75,7 +75,7 @@ npm run lint-and-format     # Runs ESLint, Stylelint, and Prettier on the whole 
 npm run prepare             # Performs finalizing installation steps for the project (e.g. husky install)
 ```
 
->What is up with having both `:live-reload` *and* `:dev` commands?
+>Why is there a `:live-reload` *and* a `:dev`?
 
 You may be wondering why both are defined when they seem to do the same thing. The nuance between
 these two commands is that `:live-reload` will immediately try to serve whatever artifacts are
