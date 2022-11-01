@@ -14,7 +14,7 @@ const extensionManifest = {
   manifest_version: 3,
   name: prettyName,
   version: packageJson.version,
-  description: packageJson.description,
+  description: packageJson.description, // Must be at most 132 characters long
   author: packageJson.author.name,
   homepage_url: packageJson.homepage,
   icons: {
