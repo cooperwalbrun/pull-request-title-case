@@ -10,4 +10,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 * Created the project (by [@cooperwalbrun](https://github.com/cooperwalbrun))
-* Implemented the initial functionality for title-casing pull requests (by [@cooperwalbrun](https://github.com/cooperwalbrun))
+* Implemented an initial approach for title-casing pull requests (by [@cooperwalbrun](https://github.com/cooperwalbrun))
+* Implemented a minimalistic popup (by [@cooperwalbrun](https://github.com/cooperwalbrun))
