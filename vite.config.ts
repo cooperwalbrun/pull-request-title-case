@@ -6,6 +6,7 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs';
 const dist = resolve(__dirname, 'dist');
 const gitHub = 'https://github.com';
 const prettyName = 'GitHub Pull Request Title-case Helper';
+const targetHosts = [`${gitHub}/*`];
 
 const extensionManifest = {
   // Below is a TypeScript implementation of fields from the JSON schema documented here:
@@ -33,10 +34,10 @@ const extensionManifest = {
     default_popup: 'popup.html'
   },
   incognito: 'spanning',
-  host_permissions: [`${gitHub}/*/compare/*`],
+  host_permissions: targetHosts,
   content_scripts: [
     {
-      matches: [`${gitHub}/*/compare/*`],
+      matches: targetHosts,
       js: ['js/content-script.js'],
       css: ['css/content-script.css']
     }
