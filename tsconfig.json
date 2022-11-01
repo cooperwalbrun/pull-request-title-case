@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "baseUrl": ".",
+    "checkJs": true,
+    "esModuleInterop": true,
+    "exactOptionalPropertyTypes": true,
+    "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
+    "isolatedModules": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "types": [
+      "@types/node",
+      "@types/jest",
+      "@testing-library/jest-dom"
+    ]
+  },
+  "include": [
+    "./src/**/*.d.ts",
+    "./src/**/*.ts",
+    "./src/**/*.js"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

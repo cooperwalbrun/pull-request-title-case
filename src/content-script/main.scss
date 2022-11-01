@@ -1,0 +1,79 @@
+$prtc-main-color: #a5f; // This is the background color of the extension's icon
+
+.prtc-button-parent {
+  display: flex !important;
+}
+
+#prtc-button {
+  border-radius: 6px; // We use a px value instead of a rem value in order to match GitHub itself
+  display: block;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 6px; // We use px values instead of rem values in order to match GitHub itself
+  z-index: 10;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  // The classes below are designed to match GitHub's colors to give a more "native" feel to the
+  // button created by this extension
+
+  &.prtc-light-default,
+  &.prtc-light-protanopia,
+  &.prtc-light-tritanopia {
+    background-color: #f6f8fa;
+    border: 1px solid rgb(27 31 36 / 15%);
+    color: #24292f;
+
+    &:hover {
+      background-color: #f3f4f6;
+    }
+  }
+
+  &.prtc-light-high-contrast {
+    background-color: #e7ecf0;
+    border: 1px solid rgb(1 4 9 / 80%);
+    color: #0e1116;
+
+    &:hover {
+      background-color: #ced5dc;
+    }
+  }
+
+  &.prtc-dark-default,
+  &.prtc-dark-protanopia,
+  &.prtc-dark-tritanopia {
+    background-color: #21262d;
+    border: 1px solid rgb(240 246 252 / 10%);
+    color: #c9d1c9;
+
+    &:hover {
+      background-color: #30363d;
+      border-color: #8b949e;
+    }
+  }
+
+  &.prtc-dark-high-contrast {
+    background-color: #272b33;
+    border: 1px solid #7a828e;
+    color: #f0f3f6;
+
+    &:hover {
+      background-color: #525964;
+      border-color: #bdc4cc;
+    }
+  }
+
+  &.prtc-dark-dimmed {
+    background-color: #373e47;
+    border: 1px solid rgb(205 217 229 / 10%);
+    color: #adbac7;
+
+    &:hover {
+      background-color: #444c56;
+      border-color: #768390;
+    }
+  }
+}

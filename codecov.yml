@@ -1,0 +1,23 @@
+codecov:
+  require_ci_to_pass: true
+
+coverage:
+  precision: 2
+  round: down
+  range: "80...90"
+  status:
+    patch:
+      default:
+        target: 30%
+    project:
+      default:
+        target: 85%
+
+comment:
+  layout: "reach,diff,flags,files,footer"
+  behavior: default
+  require_changes: false
+
+ignore:
+  - "src/main.ts"
+  - "src/**/*.d.ts"

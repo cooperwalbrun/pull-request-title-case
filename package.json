@@ -1,0 +1,65 @@
+{
+  "name": "pull-request-title-case",
+  "version": "0.1.0",
+  "description": "A browser extension for transforming GitHub pull request titles into their MLA-compliant title-cased equivalents.",
+  "keywords": [
+    "browser",
+    "extension",
+    "typescript",
+    "github"
+  ],
+  "homepage": "https://github.com/cooperwalbrun/pull-request-title-case/blob/master/README.md",
+  "bugs": "https://github.com/cooperwalbrun/pull-request-title-case/issues",
+  "author": {
+    "name": "Cooper Walbrun",
+    "email": "mail@cooperwalbrun.io",
+    "url": "https://www.cooperwalbrun.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cooperwalbrun/pull-request-title-case.git"
+  },
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "chrome:webext": "web-ext run --source-dir ./dist --target=chromium",
+    "chrome:live-reload": "run-p build:watch chrome:webext",
+    "chrome:dev": "run-s build chrome:live-reload",
+    "firefox:webext": "web-ext run --source-dir ./dist --target=firefox-desktop",
+    "firefox:live-reload": "run-p build:watch firefox:webext",
+    "firefox:dev": "run-s build firefox:live-reload",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "test": "jest",
+    "test:coverage": "jest --collect-coverage",
+    "lint-and-format": "stylelint --fix **/*.{html,css,scss} && prettier --write **/*.{js,ts,html,css,scss} && eslint **/*.{js,ts}",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/jest": "^28.1.7",
+    "@types/node": "^18.7.23",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^8.0.0",
+    "jest-environment-jsdom": "^28.1.3",
+    "lint-staged": "^13.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "prettier": "^2.6.2",
+    "sass": "^1.55.0",
+    "stylelint": "^14.10.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "ts-jest": "^28.0.8",
+    "tslib": "^2.3.1",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.7",
+    "web-ext": "^7.3.1"
+  }
+}

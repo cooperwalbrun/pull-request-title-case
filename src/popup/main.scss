@@ -1,0 +1,32 @@
+@use 'sass:color';
+
+$link-color: #a5f;
+
+#prtc-popup {
+  background-color: #fafafa;
+  font-family: monospace;
+  font-size: 0.8rem;
+  padding: 0 0.5rem 0.5rem;
+
+  .version {
+    float: right;
+  }
+
+  h1 {
+    font-size: 0.9rem;
+    white-space: pre;
+  }
+
+  div {
+    padding: 0 0 0.15rem;
+  }
+
+  a {
+    color: $link-color;
+
+    &:hover {
+      color: color.scale($link-color, $lightness: -40%);
+      cursor: pointer;
+    }
+  }
+}
