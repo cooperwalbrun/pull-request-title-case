@@ -4,14 +4,14 @@ codecov:
 coverage:
   precision: 2
   round: down
-  range: "80...90"
+  range: "90...100"
   status:
     patch:
       default:
         target: 30%
     project:
       default:
-        target: 85%
+        target: 95%
 
 comment:
   layout: "reach,diff,flags,files,footer"
@@ -19,5 +19,6 @@ comment:
   require_changes: false
 
 ignore:
-  - "src/main.ts"
+  - "src/content-script.ts"
+  - "src/popup/main.ts"
   - "src/**/*.d.ts"
