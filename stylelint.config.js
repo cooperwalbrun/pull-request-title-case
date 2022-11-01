@@ -3,8 +3,7 @@ module.exports = {
     'stylelint-config-sass-guidelines',
     'stylelint-config-standard-scss',
     'stylelint-config-prettier-scss',
-    'stylelint-config-html', // We added this so that we can target plain .html files with stylelint
-    'stylelint-config-html/svelte' // See: https://github.com/stylelint/stylelint/issues/5685#issuecomment-1003742024
+    'stylelint-config-html' // We added this so that we can target plain .html files with stylelint
   ],
   plugins: [
     // The stylelint-config-sass-guidelines dependency bundles these plugins; see:

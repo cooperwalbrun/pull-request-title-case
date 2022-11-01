@@ -1,4 +1,4 @@
-import fs from 'fs';
+import { readFileSync } from 'fs';
 import path from 'path';
 import { attemptToCreateButton, spawnObserver } from '@/content-script/interface/button';
 import { GitHubTheme } from '@/content-script/interface/theme';
@@ -11,7 +11,7 @@ function getButton(): HTMLButtonElement | null {
 
 function buildMockDOM(): void {
   // Set up and validate the mock HTML data
-  const pullRequestPageBody = fs.readFileSync(
+  const pullRequestPageBody = readFileSync(
     path.join(__dirname, '../mocks/pull-request-page-body.html'),
     'utf-8'
   );
