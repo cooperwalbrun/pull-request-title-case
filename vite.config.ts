@@ -33,7 +33,7 @@ const extensionManifest = {
     default_popup: 'popup.html'
   },
   incognito: 'spanning',
-  host_permissions: [`${gitHub}/`],
+  host_permissions: [`${gitHub}/*/compare/*`],
   content_scripts: [
     {
       matches: [`${gitHub}/*/compare/*`],
