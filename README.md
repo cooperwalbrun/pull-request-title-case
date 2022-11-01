@@ -17,11 +17,16 @@ their MLA-compliant title-cased equivalents. It aims to deliver this functionali
 web browsers (currently, Chrome and Firefox).
 
 The core mechanism introduced by this extension is a new `tc` button in the GitHub website's pull
-request interface which, when clicked, will transform the pull request's title in-place. Here are
-some examples:
+request interface which, when clicked, will transform the pull request's title in-place. Below are
+some examples.
 
-![GitHub Light](./examples/github-light.jpg)
-![GitHub Dark](./examples/github-dark.jpg)
+Full view with pull request title textbox:
+
+![GitHub Light](./examples/github-light-red-box.jpg)
+![GitHub Dark](./examples/github-dark-red-box.jpg)
+
+On mouse hover:
+
 ![GitHub Light Hover](./examples/github-light-hover.jpg)
 ![GitHub Dark Hover](./examples/github-dark-hover.jpg)
 
