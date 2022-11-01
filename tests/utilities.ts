@@ -1,4 +1,4 @@
-import { GitHubTheme } from '@/interface/theme';
+import { GitHubTheme } from '@/content-script/interface/theme';
 import type { JSONObject } from '@/types';
 
 const THEME_DATA: JSONObject<JSONObject<string>> = {
