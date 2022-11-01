@@ -1,4 +1,4 @@
-# Contributing to pull-request-title-case
+# Contributing to GitHub Pull Request Title-Case Helper
 
 1. [Development Workspace Setup](#development-workspace-setup)
 2. [Project Structure](#project-structure)
