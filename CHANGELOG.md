@@ -9,13 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing currently!
 
-## v0.1.1 - 2022-10-31
-
-### Fixed
-
-* Fixed the content scripts' handling of single-page application navigation (by [@cooperwalbrun](https://github.com/cooperwalbrun))
-
-## v0.1.0 - 2022-10-31
+## v0.1.0 - 2022-11-01
 
 ### Added
 
