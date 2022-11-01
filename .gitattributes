@@ -6,3 +6,7 @@
 *.jpg -text
 *.gif -text
 *.ico -text
+
+# These files will not be included in GitHub's (Linguist's) language statistics
+/tests/**/mocks/* linguist-vendored
+/tests/**/mocks/** linguist-vendored

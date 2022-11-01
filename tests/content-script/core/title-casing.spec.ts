@@ -13,7 +13,8 @@ const testCases = {
   'mentioning the word github': 'Mentioning the Word GitHub',
   'wrap in "quotes"': 'Wrap in "Quotes"',
   'something with i/o in the title': 'Something with I/O in the Title',
-  'ends in a special case word like devops': 'Ends in a Special Case Word Like DevOps'
+  'ends in a special case word like devops': 'Ends in a Special Case Word Like DevOps',
+  'github pull request title-case helper': 'GitHub Pull Request Title-Case Helper'
 };
 
 test('titleCase()', () => {
