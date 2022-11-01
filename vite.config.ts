@@ -20,7 +20,7 @@ const extensionManifest = {
     16: 'icons/icon-16x16.png',
     32: 'icons/icon-32x32.png',
     48: 'icons/icon-48x48.png', // This one is displayed in the Chrome Extensions Management page
-    128: 'icons/icon-128x128-padded.png', // This one is displayed in the Chrome Web Store
+    128: 'icons/icon-128x128.png',
     512: 'icons/icon-512x512.png'
   },
   action: {
