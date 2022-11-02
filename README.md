@@ -12,6 +12,9 @@
 
 ## Overview
 
+>Install this extension from the
+>[Chrome Web Store](https://chrome.google.com/webstore/detail/github-pull-request-title/dhhfopamkeaepglninnbacnkjgajoppi)
+
 `GitHub Pull Request Title-Case Helper` is a browser extension for transforming GitHub pull request titles into
 their MLA-compliant title-cased equivalents. It aims to deliver this functionality across multiple
 web browsers (currently, Chrome and Firefox).
