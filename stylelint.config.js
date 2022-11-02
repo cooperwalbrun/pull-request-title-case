@@ -14,12 +14,6 @@ module.exports = {
   rules: {
     'max-nesting-depth': 4,
     'selector-max-id': 1,
-    'selector-max-compound-selectors': 4,
-    'scss/at-rule-no-unknown': [
-      true,
-      {
-        ignoreAtRules: ['tailwind'] // See: https://stackoverflow.com/a/72161880
-      }
-    ]
+    'selector-max-compound-selectors': 4
   }
 };

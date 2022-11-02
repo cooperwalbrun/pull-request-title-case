@@ -47,7 +47,7 @@ The overall structure of this project's source files follows the ensuing convent
   * The main "entrypoint" for Vite to compile all the source code for the popup mentioned
     above
 * `tests`
-  * All unit tests for the project, divided in a way that corresponds to the `tc`/popup segregation
+  * All unit tests for the project divided in a way that corresponds to the `tc`/popup segregation
     described above
 
 ## Commands
