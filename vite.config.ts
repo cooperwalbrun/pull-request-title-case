@@ -5,7 +5,7 @@ import { existsSync, mkdirSync, writeFileSync } from 'fs';
 
 const dist = resolve(__dirname, 'dist');
 const gitHub = 'https://github.com';
-const prettyName = 'GitHub Pull Request Title-Case Helper';
+const prettyName = 'GitHub Pull Request Title Case Helper';
 const targetHosts = [`${gitHub}/*`];
 
 const extensionManifest = {

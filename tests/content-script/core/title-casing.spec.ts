@@ -2,12 +2,13 @@ import { titleCase } from '@/content-script/core/title-casing';
 
 const testCases = {
   'ci/cd': 'CI/CD',
+  'c++': 'C++',
   'testing a zesty test': 'Testing a Zesty Test',
   'release v1': 'Release v1',
   'release v1.0.0': 'Release v1.0.0',
   'release V1.0.0': 'Release v1.0.0',
   'fixinG a github workflow bug': 'Fixing a GitHub Workflow Bug',
-  'addressing 2 issues': 'Addressing 2 Issues',
+  'contains the number 2 in the title': 'Contains the Number 2 in the Title',
   'of and the': 'Of and The',
   'multiple   spaces': 'Multiple   Spaces',
   'mentioning the word github': 'Mentioning the Word GitHub',
