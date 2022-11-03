@@ -10,6 +10,7 @@ export const PARTIAL_REGEX = {
 export const FULL_REGEX = {
   // These regular expressions should only match the entire text (i.e. begin with ^ and end with $)
   NON_ALPHABETICAL: /^[^a-zA-Z]*$/,
-  DOTFILE: /^\.[a-zA-Z.-]+$/,
+  DOTFILE: /^\.[a-zA-Z.-]+('s[^a-zA-Z]*)?$/, // Includes an optional match for the POSSESSIVE pattern at the end
+  POSSESSIVE: /^'s[^a-zA-Z]*$/,
   SEMANTIC_VERSION: /^v[0-9]+\.?([0-9]+\.?)*$/
 };
