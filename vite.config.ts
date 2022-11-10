@@ -72,11 +72,12 @@ export default defineConfig(config => ({
     minifyIdentifiers: false // See: https://developer.chrome.com/docs/webstore/program_policies/#:~:text=Code%20Readability%20Requirements
   },
   build: {
-    sourcemap: false,
     outDir: dist,
-    emptyOutDir: false,
+    emptyOutDir: true,
     rollupOptions: {
       input: {
+        // These are regarded as the "roots" of the project: a compiled JavaScript file will be
+        // generated for each entry below
         'content-script': resolve(__dirname, 'src/content-script.ts'),
         'popup': resolve(__dirname, 'src/popup.html')
       },
