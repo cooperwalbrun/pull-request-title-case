@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-# We specify the --quiet flag below because lint-staged was creating an excessive number of log
-# messages for certain terminals (due to the way it tries to update logs in-place to report the
-# progress of the steps being executed)
-lint-staged --quiet
+# See: https://github.com/okonet/lint-staged/issues/1164#issuecomment-1177561594 and
+# https://github.com/typicode/husky/issues/968#issuecomment-1176848345
+exec >/dev/tty 2>&1
+
+lint-staged
