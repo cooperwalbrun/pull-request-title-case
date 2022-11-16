@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing currently!
 
+## v0.1.2 - 2022-11-15
+
+### Added
+
+* Added more entries to the special case lists for common terminology (by [@cooperwalbrun](https://github.com/cooperwalbrun))
+
 ## v0.1.1 - 2022-11-02
 
 ### Added
