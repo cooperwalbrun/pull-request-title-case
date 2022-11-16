@@ -47,8 +47,8 @@ const extensionManifest = {
 function generateManifest(outDir: string): Plugin {
   return {
     name: 'manifest-generator',
-    buildStart: async options => {
-      // See: https://rollupjs.org/guide/en/#buildstart
+    writeBundle: async options => {
+      // See: https://rollupjs.org/guide/en/#writebundle
       try {
         if (!existsSync(outDir)) {
           mkdirSync(outDir);

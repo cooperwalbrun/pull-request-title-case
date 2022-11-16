@@ -106,6 +106,7 @@ const SOFTWARE_FILES = [
   'lint-staged.config.js',
   'main.rs',
   'makefile',
+  'manifest.json',
   'Makefile.toml',
   'node_modules',
   'package-lock.json',
