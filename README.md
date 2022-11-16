@@ -23,7 +23,7 @@ The core mechanism introduced by this extension is a new `tc` button in the GitH
 request interface which, when clicked, will transform the pull request's title in-place. Below are
 some examples.
 
-Full view with pull request title textbox:
+Full view with the pull request title textbox:
 
 ![GitHub Light](./examples/github-light-red-box.jpg)
 ![GitHub Dark](./examples/github-dark-red-box.jpg)
