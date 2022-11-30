@@ -2,7 +2,7 @@ import { PARTIAL_REGEX } from '@/content-script/utilities/constants';
 
 const ARTICLES = ['a', 'an', 'the'];
 const CONJUNCTIONS = ['and', 'but', 'for', 'nor', 'or', 'so', 'yet'];
-const PREPOSITIONS = ['against', 'as', 'between', 'in', 'of', 'to', 'with'];
+const PREPOSITIONS = ['against', 'as', 'between', 'in', 'of', 'on', 'to', 'with'];
 const PREFIXES = ['pre', 'post', 'anti', 'co'];
 
 function equalsAnyIgnoreNonAlphabetical(text: string | undefined, list: string[]): boolean {

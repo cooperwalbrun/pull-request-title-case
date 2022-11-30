@@ -1,4 +1,4 @@
-# GitHub Pull Request Title Case Helper ![master](https://github.com/cooperwalbrun/pull-request-title-case/workflows/master/badge.svg) [![codecov](https://codecov.io/gh/cooperwalbrun/pull-request-title-case/branch/master/graph/badge.svg?token=Q0RJM8ZHE0)](https://codecov.io/gh/cooperwalbrun/pull-request-title-case)
+# GitHub Pull Request Title Case Helper [![master](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml/badge.svg)](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml) [![codecov](https://codecov.io/gh/cooperwalbrun/pull-request-title-case/branch/master/graph/badge.svg?token=Q0RJM8ZHE0)](https://codecov.io/gh/cooperwalbrun/pull-request-title-case)
 
 >Note: support for Firefox will come in a future release after Firefox finishes implementing support
 >for v3 of the extension manifest schema. See

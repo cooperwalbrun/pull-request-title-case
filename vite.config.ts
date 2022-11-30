@@ -4,9 +4,8 @@ import { defineConfig, Plugin } from 'vite';
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 
 const dist = resolve(__dirname, 'dist');
-const gitHub = 'https://github.com';
 const prettyName = 'GitHub Pull Request Title Case Helper';
-const targetHosts = [`${gitHub}/*`];
+const targetHosts = ['https://github.com/*'];
 
 const extensionManifest = {
   // Below is a TypeScript implementation of fields from the JSON schema documented here:
