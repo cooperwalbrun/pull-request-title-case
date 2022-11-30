@@ -15,6 +15,8 @@ const SPECIAL_CASES = [
   'GraphQL',
   'HashiCorp',
   'IntelliJ',
+  'IPv4',
+  'IPv6',
   'JavaScript',
   'MongoDB',
   'NoSQL',
@@ -25,13 +27,13 @@ const SPECIAL_CASES = [
   'PowerShell',
   'PyCharm',
   'PyPI',
-  'RDBMS',
   'ReSharper',
   'TypeScript',
   'WebStorm'
 ];
 
 const ACRONYMS = [
+  'ALB',
   'APA',
   'API',
   'AWS',
@@ -45,6 +47,7 @@ const ACRONYMS = [
   'DHCP',
   'DNS',
   'EC2',
+  'EFS',
   'FTP',
   'FTPS',
   'gRPC',
@@ -65,8 +68,11 @@ const ACRONYMS = [
   'LLVM',
   'MLA',
   'MSSQL',
+  'NLB',
   'PaaS',
+  'RDBMS',
   'RDP',
+  'ROSA',
   'S3',
   'SaaS',
   'SCSS',
@@ -77,6 +83,7 @@ const ACRONYMS = [
   'TS',
   'TLS',
   'TSX',
+  'UAT',
   'UI',
   'URL',
   'VCS',
@@ -94,6 +101,7 @@ const SOFTWARE_FILES = [
   'codecov.yml',
   'CODEOWNERS',
   'CONTRIBUTING.md',
+  'dist',
   'Dockerfile',
   'favicon.ico',
   'favicon.jpg',
@@ -108,19 +116,23 @@ const SOFTWARE_FILES = [
   'makefile',
   'manifest.json',
   'Makefile.toml',
+  'mypy.ini',
   'node_modules',
   'package-lock.json',
   'package.json',
   'postcss.config.cjs',
   'postcss.config.js',
+  'pyproject.toml',
   'README',
   'README.md',
   'robots.txt',
   'rust-toolchain.toml',
   'rustfmt.toml',
+  'setup.cfg',
   'src',
   'stylelint.config.cjs',
   'stylelint.config.js',
+  'tox.ini',
   'tsconfig.json',
   'tsconfig.node.json', // This file is provisioned as part of Vite project templates, so it is popular enough to justify an entry here
   'vite.config.js',
@@ -153,7 +165,8 @@ const DOTFILES = [
   '.scalafmt.conf',
   '.ssh',
   '.stylelintignore',
-  '.terraform'
+  '.terraform',
+  '.terraform-docs.yml'
 ];
 
 // The .sort() below is so that dotfiles are guaranteed to come first (they take precedence in
