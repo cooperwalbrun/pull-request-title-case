@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-Nothing currently!
+### Fixed
+
+* The word "via" is now properly title-cased (by [@cooperwalbrun](https://github.com/cooperwalbrun))
 
 ## v0.1.3 - 2022-11-29
 
