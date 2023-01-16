@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    assignees:
+      - "cooperwalbrun"
+    commit-message:
+      prefix: "npm"
+      include: "scope"
+    directory: "/"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "cooperwalbrun"
+    rebase-strategy: "auto"
+    schedule:
+      interval: "weekly"
+      day: "saturday"
+      time: "11:00"
+      timezone: "America/Chicago"
+    target-branch: "master"
