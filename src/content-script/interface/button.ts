@@ -14,10 +14,10 @@ export function spawnObserver(): void {
   // shenanigans, we use a mutation observer as a fallback to watch the DOM for updates and
   // dynamically create the button whenever the pull request textbox appears
   const observer = new MutationObserver(() => {
-    if (document !== null) {
+    if (document !== undefined) {
       // This if statement is made necessary by an issue with JSDOM during test execution involving
-      // mutation observers: the document is null at unhandled times during the execution of JSDOM's
-      // internal notifyMutationObservers() function
+      // mutation observers: the document is undefined at unhandled times during the execution of
+      // JSDOM's internal notifyMutationObservers() function
       attemptToCreateButton();
     }
   });
