@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+Nothing currently!
+
+## v0.1.4 - 2023-04-25
+
+### Added
+
+* Added more entries to the special case lists for common terminology (by
+  [@cooperwalbrun](https://github.com/cooperwalbrun))
+
 ### Fixed
 
 * The word "via" is now properly title-cased (by [@cooperwalbrun](https://github.com/cooperwalbrun))
