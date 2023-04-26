@@ -4,7 +4,8 @@
 2. [Project Structure](#project-structure)
 3. [Commands](#commands)
    1. [TL;DR / Cheatsheet](#tldr--cheatsheet)
-   2. [All Commands](#all-commands)
+   2. [Firefox Testing Note](#firefox-testing-note)
+   3. [All Commands](#all-commands)
 4. [Deploying New Releases](#deploying-new-releases)
 
 ## Development Workspace Setup
@@ -54,28 +55,47 @@ The overall structure of this project's source files follows the ensuing convent
 
 ### TL;DR / Cheatsheet
 
-* Use `npm run chrome:dev` or `npm run firefox:dev` for hot-reloading development
-* Use `npm run build` to create production-ready extension artifacts in the `dist` folder
+* Use `npm run chrome:dev` or `npm run firefox:dev` for hot-reloading browser-based development
+* Use `npm run build` to create production-ready extension artifacts for both Chrome and Firefox in
+  the `dist` folder
 * Use `npm run test`/`npm run test:coverage` to run unit tests with/without coverage respectively
+
+### Firefox Testing Note
+
+If you are testing this extension/add-on in Firefox, note that there is an additional manual step
+involved in granting the extension access to the `github.com` host entry in the `manifest.json`. For
+contextual information regarding this behavior, see the discussions
+[here](https://discourse.mozilla.org/t/extensions-using-content-scripts-without-any-user-action-wont-work-anymore-in-mv3/98728)
+and
+[here](https://discourse.mozilla.org/t/are-content-scripts-not-automatically-injected-anymore-with-manifest-v3/108146),
+as well as the reply [here](https://discourse.mozilla.org/t/blog-post-manifest-v3-in-firefox-recap-next-steps/97372/7).
+
+Here is what the permissions should look like:
+
+![Enabled Permissions in Firefox](./examples/firefox-permissions.jpg)
 
 ### All Commands
 
 ```bash
 npm run chrome:webext       # Deploys an already-built copy of the extension into a Chrome browser session
 npm run chrome:live-reload  # Continuously builds the extension while watching for changes and deploys it into a Chrome browser session
-npm run chrome:dev          # Builds the extension once, then continuously rebuilds the extension while watching for changes and deploys it into a Chrome browser session
-npm run firefox:webext      # Deploys an already-built copy of the extension into a Firefox browser session
-npm run firefox:live-reload # Continuously builds the extension while watching for changes and deploys it into a Firefox browser session
-npm run firefox:dev         # Builds the extension once, then continuously rebuilds the extension while watching for changes and deploys it into a Firefox browser session
-npm run build               # Builds all extension artifacts
-npm run build:watch         # Builds all extension artifacts and watches for changes
+npm run chrome:dev          # Builds the extension once, then continuously rebuilds the extension and deploys it into a Chrome browser session
+npm run firefox:webext      # Deploys an already-built copy of the add-on into a Firefox browser session
+npm run firefox:live-reload # Continuously builds the add-on while watching for changes and deploys it into a Firefox browser session
+npm run firefox:dev         # Builds the add-on once, then continuously rebuilds the extension and deploys it into a Firefox browser session
+npm run clean               # Cleans the artifact output directory
+npm run build               # Cleans the artifact output directory and builds all extension/add-on artifacts for both Chrome and Firefox
+npm run build:chrome        # Builds all Chrome extension artifacts
+npm run build:firefox       # Builds all Firefox add-on artifacts
+npm run build:chrome:watch  # Builds all Chrome extension artifacts and watches for changes
+npm run build:firefox:watch # Builds all Firefox add-on artifacts and watches for changes
 npm run test                # Runs all unit tests
 npm run test:coverage       # Runs all unit tests with code coverage analysis
 npm run lint-and-format     # Runs ESLint, Stylelint, and Prettier on the whole project
 npm run prepare             # Performs finalizing installation steps for the project (e.g. husky install)
 ```
 
->Why is there a `:live-reload` *and* a `:dev`?
+>Why is there a `:live-reload` *and* a `:dev` for the browser commands?
 
 You may be wondering why both are defined when they seem to do the same thing. The nuance between
 these two commands is that `:live-reload` will immediately try to serve whatever artifacts are

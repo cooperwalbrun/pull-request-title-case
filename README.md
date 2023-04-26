@@ -1,10 +1,5 @@
 # GitHub Pull Request Title Case Helper [![master](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml/badge.svg)](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml) [![codecov](https://codecov.io/gh/cooperwalbrun/pull-request-title-case/branch/master/graph/badge.svg?token=Q0RJM8ZHE0)](https://codecov.io/gh/cooperwalbrun/pull-request-title-case)
 
->Note: support for Firefox will come in a future release after Firefox finishes implementing support
->for v3 of the extension manifest schema. See
->[this blog post](https://blog.mozilla.org/addons/2022/06/08/manifest-v3-firefox-developer-preview-how-to-get-involved/)
->for more details.
-
 1. [Overview](#overview)
 2. [Project Notes](#project-notes)
    1. [Extension Icon](#extension-icon)

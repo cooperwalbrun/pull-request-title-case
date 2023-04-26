@@ -9,6 +9,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 Nothing currently!
 
+## v0.1.5 - 2023-04-26
+
+### Added
+
+* Defined the `clean`, `build:<browser>`, and `build:<browser>:watch` commands in `package.json` to
+  facilitate the fixes pertaining to `chrome:dev` and `firefox:dev` as well as the new Firefox
+  support (by [@cooperwalbrun](https://github.com/cooperwalbrun))
+
+### Changed
+
+* The unnecessary `host_permissions` configuration in the `manifest.json` has been removed
+  (by [@cooperwalbrun](https://github.com/cooperwalbrun))
+
+### Fixed
+
+* The `chrome:dev` and `firefox:dev` NPM commands will no longer induce `no such file or directory`
+  errors related to the `manifest.json` (by [@cooperwalbrun](https://github.com/cooperwalbrun))
+
 ## v0.1.4 - 2023-04-25
 
 ### Added
