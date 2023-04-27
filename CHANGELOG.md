@@ -16,6 +16,9 @@ Nothing currently!
 * There are now `clean`, `build:<browser>`, and `build:<browser>:watch` commands in `package.json`
   to facilitate the fixes pertaining to `chrome:dev` and `firefox:dev` as well as the new Firefox
   support (by [@cooperwalbrun](https://github.com/cooperwalbrun))
+* *GitHub Pull Request Title Case Helper* is now available on
+  [Firefox](https://addons.mozilla.org/en-US/firefox/addon/pull-request-title-case) (Firefox v109.0
+  and up only) (by [@cooperwalbrun](https://github.com/cooperwalbrun))
 
 ### Changed
 

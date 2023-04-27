@@ -62,9 +62,9 @@ The overall structure of this project's source files follows the ensuing convent
 
 ### Firefox Testing Note
 
-If you are testing this extension/add-on in Firefox, note that there is an additional manual step
-involved in granting the extension access to the `github.com` host entry in the `manifest.json`. For
-contextual information regarding this behavior, see the discussions
+If you are testing this extension in Firefox, note that there is an additional manual step required
+to grant the extension access to `github.com`. For contextual information regarding this behavior,
+see the discussions
 [here](https://discourse.mozilla.org/t/extensions-using-content-scripts-without-any-user-action-wont-work-anymore-in-mv3/98728)
 and
 [here](https://discourse.mozilla.org/t/are-content-scripts-not-automatically-injected-anymore-with-manifest-v3/108146),
@@ -80,15 +80,15 @@ Here is what the permissions should look like:
 npm run chrome:webext       # Deploys an already-built copy of the extension into a Chrome browser session
 npm run chrome:live-reload  # Continuously builds the extension while watching for changes and deploys it into a Chrome browser session
 npm run chrome:dev          # Builds the extension once, then continuously rebuilds the extension and deploys it into a Chrome browser session
-npm run firefox:webext      # Deploys an already-built copy of the add-on into a Firefox browser session
-npm run firefox:live-reload # Continuously builds the add-on while watching for changes and deploys it into a Firefox browser session
-npm run firefox:dev         # Builds the add-on once, then continuously rebuilds the extension and deploys it into a Firefox browser session
+npm run firefox:webext      # Deploys an already-built copy of the extension into a Firefox browser session
+npm run firefox:live-reload # Continuously builds the extension while watching for changes and deploys it into a Firefox browser session
+npm run firefox:dev         # Builds the extension once, then continuously rebuilds the extension and deploys it into a Firefox browser session
 npm run clean               # Cleans the artifact output directory
-npm run build               # Cleans the artifact output directory and builds all extension/add-on artifacts for both Chrome and Firefox
+npm run build               # Cleans the artifact output directory and builds all extension/extension artifacts for both Chrome and Firefox
 npm run build:chrome        # Builds all Chrome extension artifacts
-npm run build:firefox       # Builds all Firefox add-on artifacts
+npm run build:firefox       # Builds all Firefox extension artifacts
 npm run build:chrome:watch  # Builds all Chrome extension artifacts and watches for changes
-npm run build:firefox:watch # Builds all Firefox add-on artifacts and watches for changes
+npm run build:firefox:watch # Builds all Firefox extension artifacts and watches for changes
 npm run test                # Runs all unit tests
 npm run test:coverage       # Runs all unit tests with code coverage analysis
 npm run lint-and-format     # Runs ESLint, Stylelint, and Prettier on the whole project
@@ -108,9 +108,10 @@ safe to run `:live-reload`.
 ## Deploying New Releases
 
 This project's static web artifacts get uploaded to the Chrome and Firefox extension marketplaces
-via a GitHub Actions workflow, and as such, there are no code changes required to deploy newer
-versions. However, as a matter of convention, the `version` in [package.json](./package.json) should
-be incremented as part of every feature pull request.
+via a manual process handled by [@cooperwalbrun](https://github.com/cooperwalbrun). The upload will
+always coincide with a version increment and corresponding git tag, so as a matter of convention,
+always be sure to increment the `version` in [package.json](./package.json) as part of every pull
+request.
 
 >Note: every time you bump the `package.json` version, be sure to do another `npm install` to update
 >this module's `package-lock.json` with the newest version of itself.
