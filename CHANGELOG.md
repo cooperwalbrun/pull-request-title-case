@@ -13,8 +13,8 @@ Nothing currently!
 
 ### Added
 
-* Defined the `clean`, `build:<browser>`, and `build:<browser>:watch` commands in `package.json` to
-  facilitate the fixes pertaining to `chrome:dev` and `firefox:dev` as well as the new Firefox
+* There are now `clean`, `build:<browser>`, and `build:<browser>:watch` commands in `package.json`
+  to facilitate the fixes pertaining to `chrome:dev` and `firefox:dev` as well as the new Firefox
   support (by [@cooperwalbrun](https://github.com/cooperwalbrun))
 
 ### Changed
