@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-Nothing currently!
+### Added
+
+* Added more entries to the special case lists for common terminology (by
+  [@cooperwalbrun](https://github.com/cooperwalbrun))
 
 ## v0.1.5 - 2023-04-26
 
@@ -16,9 +19,8 @@ Nothing currently!
 * There are now `clean`, `build:<browser>`, and `build:<browser>:watch` commands in `package.json`
   to facilitate the fixes pertaining to `chrome:dev` and `firefox:dev` as well as the new Firefox
   support (by [@cooperwalbrun](https://github.com/cooperwalbrun))
-* *GitHub Pull Request Title Case Helper* is now available on
-  [Firefox](https://addons.mozilla.org/en-US/firefox/addon/pull-request-title-case) (Firefox v109.0
-  and up only) (by [@cooperwalbrun](https://github.com/cooperwalbrun))
+* `GitHub Pull Request Title Case Helper` is now available for download on Firefox `v109.0` and up
+  (by [@cooperwalbrun](https://github.com/cooperwalbrun))
 
 ### Changed
 
