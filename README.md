@@ -1,4 +1,4 @@
-# GitHub Pull Request Title Case Helper [![master](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml/badge.svg)](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml) [![codecov](https://codecov.io/gh/cooperwalbrun/pull-request-title-case/branch/master/graph/badge.svg?token=Q0RJM8ZHE0)](https://codecov.io/gh/cooperwalbrun/pull-request-title-case)
+# GitHub Pull Request Title Case Helper [![master](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml/badge.svg)](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml) [![codecov](https://codecov.io/gh/cooperwalbrun/pull-request-title-case/branch/master/graph/badge.svg?token=Q0RJM8ZHE0)](https://codecov.io/gh/cooperwalbrun/pull-request-title-case) [![Chrome](https://img.shields.io/badge/Chrome-v0.1.5-blue)](https://chrome.google.com/webstore/detail/github-pull-request-title/dhhfopamkeaepglninnbacnkjgajoppi) [![Firefox](https://img.shields.io/badge/Firefox-v0.1.5-orange)](https://addons.mozilla.org/en-US/firefox/addon/pull-request-title-case)
 
 1. [Overview](#overview)
 2. [Project Notes](#project-notes)
@@ -12,7 +12,7 @@
 >[Chrome](https://chrome.google.com/webstore/detail/github-pull-request-title/dhhfopamkeaepglninnbacnkjgajoppi) or
 >[Firefox](https://addons.mozilla.org/en-US/firefox/addon/pull-request-title-case)!
 
-`GitHub Pull Request Title-Case Helper` is a browser extension for transforming GitHub pull request
+`GitHub Pull Request Title Case Helper` is a browser extension for transforming GitHub pull request
 titles into their MLA-compliant title-cased equivalents. It aims to deliver this functionality
 across multiple web browsers (currently, Chrome and Firefox).
 
