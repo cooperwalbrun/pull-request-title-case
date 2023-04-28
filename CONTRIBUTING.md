@@ -107,11 +107,18 @@ safe to run `:live-reload`.
 
 ## Deploying New Releases
 
-This project's static web artifacts get uploaded to the Chrome and Firefox extension marketplaces
-via a manual process handled by [@cooperwalbrun](https://github.com/cooperwalbrun). The upload will
-always coincide with a version increment and corresponding git tag, so as a matter of convention,
-always be sure to increment the `version` in [package.json](./package.json) as part of every pull
-request.
-
 >Note: every time you bump the `package.json` version, be sure to do another `npm install` to update
 >this module's `package-lock.json` with the newest version of itself.
+
+This project's static web artifacts get uploaded to the Chrome and Firefox extension marketplaces
+via a manual process handled directly by [@cooperwalbrun](https://github.com/cooperwalbrun). The
+upload will always coincide with a version increment and corresponding Git tag, so as a matter of
+convention, you should always increment the `version` in [package.json](./package.json) if your
+pull request contains the first change since the most recent release. Refer to the
+[CHANGELOG.md](./CHANGELOG.md) to find out whether there have been any changes merged into the
+`master` branch since the last versioned release.
+
+When a new version is ready to be released, the [CHANGELOG.md](./CHANGELOG.md) will be updated with
+the new version and the markdown badges in the [README.md](./README.md) will be updated. Typically,
+this is done as part of the last pull request whose changes will be merged into `master`, but this
+release preparation can also be done in its own dedicated pull request.

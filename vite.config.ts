@@ -85,9 +85,10 @@ export default defineConfig(config => ({
   esbuild: {
     // In Chrome, we are not allowed to minify the extension artifacts - see:
     // https://developer.chrome.com/docs/webstore/program_policies/#:~:text=Code%20Readability%20Requirements
-    // However, in Firefox, we were forced to share the extension's full source code with Mozilla
-    // due to the fact that we use a bundler (Vite/Rollup); since we shared the source with them, we
-    // are completely free to minify the actual extension artifacts
+    // In Firefox, we are free to minify the extension artifacts however we want: this is because
+    // we had to share the project's entire source code with Mozilla anyway (and Mozilla requires
+    // that any extension using a bundler like Vite/Rollup has its source code submitted for review
+    // alongside the actual extension artifacts)
     minifyIdentifiers: isFirefox
   },
   build: {
