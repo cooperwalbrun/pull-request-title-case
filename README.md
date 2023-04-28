@@ -1,23 +1,20 @@
 # GitHub Pull Request Title Case Helper [![master](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml/badge.svg)](https://github.com/cooperwalbrun/pull-request-title-case/actions/workflows/master.yml) [![codecov](https://codecov.io/gh/cooperwalbrun/pull-request-title-case/branch/master/graph/badge.svg?token=Q0RJM8ZHE0)](https://codecov.io/gh/cooperwalbrun/pull-request-title-case)
 
->Note: support for Firefox will come in a future release after Firefox finishes implementing support
->for v3 of the extension manifest schema. See
->[this blog post](https://blog.mozilla.org/addons/2022/06/08/manifest-v3-firefox-developer-preview-how-to-get-involved/)
->for more details.
-
 1. [Overview](#overview)
 2. [Project Notes](#project-notes)
-   1. [Extension Icon](#extension-icon)
+   1. [Title-Casing Conventions](#title-casing-conventions)
+   2. [Extension Icon](#extension-icon)
 3. [Contributing](#contributing)
 
 ## Overview
 
->Install this extension from the
->[Chrome Web Store](https://chrome.google.com/webstore/detail/github-pull-request-title/dhhfopamkeaepglninnbacnkjgajoppi)!
+>Download this extension for
+>[Chrome](https://chrome.google.com/webstore/detail/github-pull-request-title/dhhfopamkeaepglninnbacnkjgajoppi) or
+>[Firefox](https://addons.mozilla.org/en-US/firefox/addon/pull-request-title-case)!
 
-`GitHub Pull Request Title-Case Helper` is a browser extension for transforming GitHub pull request titles into
-their MLA-compliant title-cased equivalents. It aims to deliver this functionality across multiple
-web browsers (currently, Chrome and Firefox).
+`GitHub Pull Request Title-Case Helper` is a browser extension for transforming GitHub pull request
+titles into their MLA-compliant title-cased equivalents. It aims to deliver this functionality
+across multiple web browsers (currently, Chrome and Firefox).
 
 The core mechanism introduced by this extension is a new `tc` button in the GitHub website's pull
 request interface which, when clicked, will transform the pull request's title in-place. Below are
@@ -40,6 +37,14 @@ Several of the things this repository does are influenced/informed by design dec
 [vite-plugin-web-extension](https://github.com/aklinker1/vite-plugin-web-extension/tree/main). While
 this project does not directly utilize either of these, they deserve recognition and support for
 their valuable efforts!
+
+### Title-Casing Conventions
+
+The title-casing logic in this extension is influenced by the conventions of
+[Capitalize My Title](https://capitalizemytitle.com/style/MLA). In many cases, we reference this
+website's output to disambiguate how certain rules should behave in edge cases, though we also try
+to conduct further supplementary research in order to find legitimate documentation describing the
+rules.
 
 ### Extension Icon
 

@@ -10,7 +10,7 @@ export function attemptToCreateButton(): void {
 }
 
 export function spawnObserver(): void {
-  // In situations wherein the textbox cannot be found due to dynamic single-page application
+  // For situations in which the textbox cannot be found due to dynamic single-page application
   // shenanigans, we use a mutation observer as a fallback to watch the DOM for updates and
   // dynamically create the button whenever the pull request textbox appears
   const observer = new MutationObserver(() => {
