@@ -2,8 +2,9 @@
 
 1. [Overview](#overview)
 2. [Project Notes](#project-notes)
-   1. [Title-Casing Conventions](#title-casing-conventions)
-   2. [Extension Icon](#extension-icon)
+   1. [Project Structure](#project-structure)
+   2. [Title-Casing Conventions](#title-casing-conventions)
+   3. [Extension Icon](#extension-icon)
 3. [Contributing](#contributing)
 
 ## Overview
@@ -37,6 +38,29 @@ Several of the things this repository does are influenced/informed by design dec
 [vite-plugin-web-extension](https://github.com/aklinker1/vite-plugin-web-extension/tree/main). While
 this project does not directly utilize either of these, they deserve recognition and support for
 their valuable efforts!
+
+### Project Structure
+
+The overall structure of this project's source files follows the ensuing convention:
+
+* `src/assets`
+   * Static assets - namely, images, non-compiled CSS/JS/HTML, etc
+* `src/content-script`
+   * Source code that is specific to the `tc` button's display and functionality
+* `src/popup`
+   * Source code that is specific to the popup's display and functionality (note: "popup" here
+     refers to the button that appears next to the URL bar in the browser that users can click to
+     display a miniature UI for the extension)
+* `src/content-script.ts`
+   * The main "entrypoint" for Vite to compile all the source code for the `tc` button
+* `src/popup.html`
+   * The main "entrypoint" for Vite to compile all the source code for the popup
+* `tests`
+   * All unit tests for the project divided in a way that corresponds to the `tc`/popup segregation
+     described above
+* `vite.config.ts`
+   * Source code for the build configuration of the extension, including a dynamic implementation of
+     the `manifest.json` in TypeScript
 
 ### Title-Casing Conventions
 
