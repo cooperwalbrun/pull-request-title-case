@@ -1,12 +1,11 @@
 # Contributing to GitHub Pull Request Title Case Helper
 
 1. [Development Workspace Setup](#development-workspace-setup)
-2. [Project Structure](#project-structure)
-3. [Commands](#commands)
+2. [Commands](#commands)
    1. [TL;DR / Cheatsheet](#tldr--cheatsheet)
    2. [Firefox Testing Note](#firefox-testing-note)
    3. [All Commands](#all-commands)
-4. [Deploying New Releases](#deploying-new-releases)
+3. [Deploying New Releases](#deploying-new-releases)
 
 ## Development Workspace Setup
 
@@ -28,28 +27,6 @@ npm run prepare
 ```
 
 before beginning development.
-
-## Project Structure
-
-The overall structure of this project's source files follows the ensuing convention:
-
-* `src/assets`
-  * Static assets - namely, images, non-compiled CSS/JS/HTML, etc
-* `src/content-script`
-  * Source code that is specific to the `tc` button's functionality lives
-* `src/popup`
-  * Source code that is specific to the popup's functionality lives (note: "popup" here refers to
-    the button that appears next to the URL bar in the browser that users can click to display a
-    miniature UI for the extension)
-* `src/content-script.ts`
-  * The main "entrypoint" for Vite to compile all the source code for the `tc` button's
-    functionality
-* `src/popup.html`
-  * The main "entrypoint" for Vite to compile all the source code for the popup mentioned
-    above
-* `tests`
-  * All unit tests for the project divided in a way that corresponds to the `tc`/popup segregation
-    described above
 
 ## Commands
 
