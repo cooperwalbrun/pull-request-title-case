@@ -63,7 +63,7 @@
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard-scss": "^6.1.0",
     "ts-jest": "^29.1.1",
-    "tslib": "^2.5.3",
+    "tslib": "^2.6.1",
     "typescript": "^5.1.6",
     "vite": "^4.4.4",
     "web-ext": "^7.6.2"
