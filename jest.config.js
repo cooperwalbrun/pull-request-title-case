@@ -21,7 +21,7 @@ module.exports = {
     }
   },
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+  setupFilesAfterEnv: [],
   globals: {
     EXTENSION_NAME: 'test',
     EXTENSION_VERSION: '0.0.0'
