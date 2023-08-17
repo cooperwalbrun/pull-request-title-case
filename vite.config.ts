@@ -137,5 +137,5 @@ export default defineConfig(
         }
       },
       plugins: [generateManifest(dist)]
-    } as UserConfig)
+    }) as UserConfig
 );
