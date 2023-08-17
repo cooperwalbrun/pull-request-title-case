@@ -21,7 +21,7 @@ module.exports = {
     }
   },
   testEnvironment: 'jsdom',
-  setupFilesAfterEnv: [],
+  setupFilesAfterEnv: ['<rootDir>/tests/setup.ts'],
   globals: {
     EXTENSION_NAME: 'test',
     EXTENSION_VERSION: '0.0.0'
