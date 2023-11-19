@@ -87,7 +87,6 @@ export default defineConfig(
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   (config: ConfigEnv) =>
     ({
-      root: 'src',
       publicDir: resolve(__dirname, 'src/assets'),
       esbuild: {
         // In Chrome, we are not allowed to minify the extension artifacts - see:
@@ -112,7 +111,7 @@ export default defineConfig(
             // These are regarded as the "roots" of the project: a compiled JavaScript file will be
             // generated for each entry below
             'content-script': resolve(__dirname, 'src/content-script.ts'),
-            'popup': resolve(__dirname, 'src/popup.html')
+            'popup': resolve(__dirname, 'popup.html')
           },
           output: {
             assetFileNames: assetInfo => {
@@ -136,6 +135,24 @@ export default defineConfig(
           '@': resolve(__dirname, 'src')
         }
       },
-      plugins: [generateManifest(dist)]
+      plugins: [generateManifest(dist)],
+      test: {
+        globals: true,
+        environment: 'jsdom',
+        setupFiles: ['tests/setup.ts'], // Note: the @testing-library/jest-dom import in this file does not work unless we specify globals: true above
+        coverage: {
+          provider: 'v8',
+          reporter: ['html', 'cobertura'], // Note: cobertura is required for the Codecov configuration in this project to work
+          include: ['src/**/*.ts'],
+          exclude: [
+            'src/content-script.ts', // We intentionally keep the main entrypoints slim, so coverage is not as important here
+            'src/popup/main.ts', // We intentionally keep the main entrypoints slim, so coverage is not as important here
+            'src/**/*.d.ts'
+          ],
+          branches: 90,
+          functions: 90,
+          statements: 90
+        }
+      }
     }) as UserConfig
 );

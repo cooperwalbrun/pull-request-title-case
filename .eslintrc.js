@@ -5,7 +5,8 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   globals: {
     NodeJS: true,
-    APP_VERSION: 'readonly'
+    EXTENSION_NAME: 'readonly',
+    EXTENSION_VERSION: 'readonly'
   },
   parserOptions: {
     project: true,

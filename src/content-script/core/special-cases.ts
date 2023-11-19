@@ -82,6 +82,7 @@ const ACRONYMS = [
   'SaaS',
   'SCSS',
   'SDLC',
+  'SEO',
   'SQL',
   'SSH',
   'SSL',
