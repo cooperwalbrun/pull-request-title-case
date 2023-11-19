@@ -7,9 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+Nothing currently!
+
+## v0.2.0 - 2023-11-19
+
 ### Added
 
 * Added more entries to the special case lists for common terminology (by
+  [@cooperwalbrun](https://github.com/cooperwalbrun))
+
+### Changed
+
+* The extension artifacts are now built with Vite v5 instead of Vite v4 (by
   [@cooperwalbrun](https://github.com/cooperwalbrun))
 
 ## v0.1.5 - 2023-04-26

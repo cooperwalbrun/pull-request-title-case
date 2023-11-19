@@ -5,5 +5,5 @@ test('setVersionNumber()', () => {
 
   expect(document.querySelector<HTMLSpanElement>('.version')?.textContent).toEqual('');
   setVersionNumber();
-  expect(document.querySelector<HTMLSpanElement>('.version')?.textContent).toEqual('v0.0.0');
+  expect(document.querySelector<HTMLSpanElement>('.version')?.textContent).not.toEqual('');
 });
