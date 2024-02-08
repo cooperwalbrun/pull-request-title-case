@@ -1,6 +1,8 @@
 import { titleCase } from '@/content-script/core/title-casing';
 
 const testCases = {
+  'potato-muffin': 'Potato-Muffin',
+  '"potato-muffin': '"Potato-Muffin',
   'ci/cd': 'CI/CD',
   'c++': 'C++',
   'testing a zesty test': 'Testing a Zesty Test',
