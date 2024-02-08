@@ -36,7 +36,7 @@
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "lint-and-format": "stylelint --fix **/*.{html,css,scss} && prettier --write **/*.{js,ts,html,css,scss} && eslint **/*.{js,ts}",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.0",
