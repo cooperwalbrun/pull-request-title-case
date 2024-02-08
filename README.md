@@ -58,7 +58,7 @@ The overall structure of this project's source files follows the ensuing convent
 * `tests`
    * All unit tests for the project divided in a way that corresponds to the `tc`/popup segregation
      described above
-* `vite.config.ts`
+* `vite.config.mts`
    * Source code for the build configuration of the extension, including a dynamic implementation of
      the `manifest.json` in TypeScript
 

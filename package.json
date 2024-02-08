@@ -35,8 +35,8 @@
     "build:firefox:watch": "cross-env BROWSER=firefox vite build --watch",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "lint-and-format": "stylelint --fix **/*.{html,css,scss} && prettier --write **/*.{js,ts,html,css,scss} && eslint **/*.{js,ts}",
-    "prepare": "husky install"
+    "lint-and-format": "stylelint --fix **/*.{html,css,scss} && prettier --write **/*.{js,ts,mts,html,css,scss} && eslint **/*.{js,ts,mts}",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.0",

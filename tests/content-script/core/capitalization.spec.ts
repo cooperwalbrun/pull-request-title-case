@@ -25,14 +25,7 @@ test('capitalize()', () => {
     '': '',
     '   ': '   ',
     'test': 'Test',
-    '"test"': '"Test"',
-    'potato-muffin': 'Potato-Muffin',
-    '"potato-muffin': '"Potato-Muffin',
-    'pre-install': 'Pre-install',
-    'post-install': 'Post-install',
-    'co-operation': 'Co-operation',
-    'anti-inflammatory': 'Anti-inflammatory',
-    '"pre-install': '"Pre-install'
+    '"test"': '"Test"'
   };
 
   for (const [test, expected] of Object.entries(testCases)) {

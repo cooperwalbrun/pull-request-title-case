@@ -7,17 +7,21 @@ export function titleCase(text: string): string {
   const ret: string[] = [];
   slashExplodedWords.forEach((tokens, wordIndex) => {
     const current: string[] = [];
-    for (const token of tokens) {
-      const specialCase = getSpecialCaseForm(token);
-      if (specialCase !== undefined) {
-        current.push(specialCase);
-      } else if (wordIndex === 0 || wordIndex === words.length - 1) {
-        current.push(capitalize(token));
-      } else if (shouldNotCapitalize(token)) {
-        current.push(token.toLowerCase());
-      } else {
-        current.push(capitalize(token));
+    for (const possiblyHyphenatedToken of tokens) {
+      const hyphenParts = [];
+      for (const token of possiblyHyphenatedToken.split('-')) {
+        const specialCase = getSpecialCaseForm(token);
+        if (specialCase !== undefined) {
+          hyphenParts.push(specialCase);
+        } else if (wordIndex === 0 || wordIndex === words.length - 1) {
+          hyphenParts.push(capitalize(token));
+        } else if (shouldNotCapitalize(token)) {
+          hyphenParts.push(token.toLowerCase());
+        } else {
+          hyphenParts.push(capitalize(token));
+        }
       }
+      current.push(hyphenParts.join('-'));
     }
     ret.push(current.join('/'));
   });
