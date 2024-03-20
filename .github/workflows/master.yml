@@ -21,8 +21,6 @@ jobs:
       - name: Upload test coverage report to Codecov
         uses: codecov/codecov-action@v4
         with:
-          # We specify the token below to mitigate the impact of the bug mentioned here:
-          # https://community.codecov.com/t/upload-issues-unable-to-locate-build-via-github-actions-api/3954
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
           flags: node20
