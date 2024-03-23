@@ -16,3 +16,38 @@ updates:
       time: "11:00"
       timezone: "America/Chicago"
     target-branch: "master"
+    groups:
+      development-tools:
+        patterns:
+          - "husky"
+          - "lint-staged"
+      eslint:
+        patterns:
+          - "@typescript-eslint/*"
+          - "eslint"
+          - "eslint-config-prettier"
+      npm-scripts:
+        patterns:
+          - "cross-env"
+          - "del-cli"
+          - "npm-run-all"
+      postcss:
+        patterns:
+          - "autoprefixer"
+          - "postcss"
+      stylelint:
+        patterns:
+          - "stylelint"
+          - "stylelint-config-html"
+          - "stylelint-config-prettier-scss"
+          - "stylelint-config-sass-guidelines"
+          - "stylelint-config-standard-scss"
+      unit-testing:
+        patterns:
+          - "@testing-library/*"
+          - "jsdom"
+      vite:
+        patterns:
+          - "vite"
+          - "vitest"
+          - "@vitest/*"
