@@ -1,12 +1,5 @@
-# These files will be normalized on commit (CRLF converted to LF) - asterisk is a wildcard
+# These files will be normalized on commit (CRLF converted to LF)
 * text eol=lf
 
 # These files will NOT be normalized
 *.png -text
-*.jpg -text
-*.gif -text
-*.ico -text
-
-# These files will not be included in GitHub's (Linguist's) language statistics
-/tests/**/mocks/* linguist-vendored
-/tests/**/mocks/** linguist-vendored
