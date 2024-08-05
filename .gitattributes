@@ -3,3 +3,4 @@
 
 # These files will NOT be normalized
 *.png -text
+*.jpg -text
