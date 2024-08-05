@@ -109,6 +109,9 @@ const SOFTWARE_FILES = [
   'CONTRIBUTING.md',
   'dist',
   'Dockerfile',
+  'eslint.config.cjs',
+  'eslint.config.js',
+  'eslint.config.mjs',
   'favicon.ico',
   'favicon.jpg',
   'favicon.png',
@@ -118,6 +121,8 @@ const SOFTWARE_FILES = [
   'lib.rs',
   'lint-staged.config.cjs',
   'lint-staged.config.js',
+  'lint-staged.config.mjs',
+  'lint-staged.config.ts',
   'main.rs',
   'makefile',
   'manifest.json',
@@ -128,6 +133,8 @@ const SOFTWARE_FILES = [
   'package.json',
   'postcss.config.cjs',
   'postcss.config.js',
+  'postcss.config.mjs',
+  'postcss.config.ts',
   'pyproject.toml',
   'README',
   'README.md',
@@ -138,10 +145,14 @@ const SOFTWARE_FILES = [
   'src',
   'stylelint.config.cjs',
   'stylelint.config.js',
+  'stylelint.config.mjs',
+  'stylelint.config.ts',
   'tox.ini',
   'tsconfig.json',
   'tsconfig.node.json', // This file is provisioned as part of Vite project templates, so it is popular enough to justify an entry here
+  'vite.config.cjs',
   'vite.config.js',
+  'vite.config.mjs',
   'vite.config.ts'
 ];
 

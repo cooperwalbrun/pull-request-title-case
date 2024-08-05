@@ -4,8 +4,6 @@ import type { ConfigEnv, Plugin, UserConfig } from 'vite';
 import { defineConfig } from 'vite';
 import { existsSync, mkdirSync, writeFileSync } from 'fs';
 
-/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access */
-
 const isFirefox = process.env.BROWSER === 'firefox';
 const dist = resolve(__dirname, 'dist/' + (isFirefox ? 'firefox' : 'chrome'));
 const prettyName = 'GitHub Pull Request Title Case Helper';
@@ -60,7 +58,6 @@ const firefoxManifestParts = {
 function generateManifest(outDir: string): Plugin {
   return {
     name: 'manifest-generator',
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     writeBundle: options => {
       // See: https://rollupjs.org/guide/en/#writebundle
       try {
@@ -84,7 +81,6 @@ function generateManifest(outDir: string): Plugin {
 }
 
 export default defineConfig(
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   (config: ConfigEnv) =>
     ({
       publicDir: resolve(__dirname, 'src/assets'),
