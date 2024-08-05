@@ -21,11 +21,6 @@ updates:
         patterns:
           - "husky"
           - "lint-staged"
-      eslint:
-        patterns:
-          - "@typescript-eslint/*"
-          - "eslint"
-          - "eslint-config-prettier"
       npm-scripts:
         patterns:
           - "cross-env"

@@ -68,7 +68,7 @@ npm run build:chrome:watch  # Builds all Chrome extension artifacts and watches 
 npm run build:firefox:watch # Builds all Firefox extension artifacts and watches for changes
 npm run test                # Runs all unit tests
 npm run test:coverage       # Runs all unit tests with code coverage analysis
-npm run lint-and-format     # Runs ESLint, Stylelint, and Prettier on the whole project
+npm run lint-and-format     # Runs Stylelint and Prettier on the whole project
 npm run prepare             # Performs finalizing installation steps for the project (e.g. husky install)
 ```
 
