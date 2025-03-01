@@ -53,7 +53,7 @@
     "postcss": "^8.5.3",
     "prettier": "^3.5.1",
     "sass": "^1.85.1",
-    "stylelint": "^16.14.1",
+    "stylelint": "^16.15.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-sass-guidelines": "^12.1.0",
