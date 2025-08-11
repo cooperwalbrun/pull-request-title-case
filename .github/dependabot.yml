@@ -15,6 +15,11 @@ updates:
       timezone: "America/Chicago"
     target-branch: "master"
     groups:
+      css:
+        patterns:
+          - "autoprefixer"
+          - "postcss"
+          - "sass"
       development-tools:
         patterns:
           - "husky"
@@ -24,10 +29,9 @@ updates:
           - "cross-env"
           - "del-cli"
           - "npm-run-all"
-      postcss:
+      prettier:
         patterns:
-          - "autoprefixer"
-          - "postcss"
+          - "prettier"
       stylelint:
         patterns:
           - "stylelint"
@@ -35,12 +39,21 @@ updates:
           - "stylelint-config-prettier-scss"
           - "stylelint-config-sass-guidelines"
           - "stylelint-config-standard-scss"
+      typescript:
+        patterns:
+          - "@types/node"
+          - "tslib"
+          - "typescript"
       unit-testing:
         patterns:
           - "@testing-library/*"
           - "jsdom"
       vite:
         patterns:
+          - "@vitest/coverage-v8"
           - "vite"
           - "vitest"
-          - "@vitest/*"
+          - "typescript"
+      web-ext:
+        patterns:
+          - "web-ext"

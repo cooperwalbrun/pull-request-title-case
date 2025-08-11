@@ -9,19 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v4
-      - name: Set up Node 20
+        uses: actions/checkout@v5
+      - name: Set up Node 24
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - name: Install dependencies
         run: npm install
       - name: Unit test with code coverage analysis
         run: npm run test:coverage
       - name: Upload test coverage report to Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           fail_ci_if_error: true
-          flags: node20
+          flags: node24
           files: coverage/cobertura-coverage.xml
