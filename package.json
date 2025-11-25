@@ -41,7 +41,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/user-event": "^14.6.1",
-    "@vitest/coverage-v8": "^4.0.13",
+    "@vitest/coverage-v8": "^4.0.14",
     "autoprefixer": "^10.4.22",
     "cross-env": "^10.1.0",
     "del-cli": "^7.0.0",
